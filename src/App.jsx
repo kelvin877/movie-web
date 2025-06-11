@@ -9,16 +9,18 @@ import { MovieProvider } from './contexts/MovieContext';
 function App() {
   
   return (
-    <MovieProvider>
-        <NavBar/>
-      <main className="main-content" style={{ backgroundColor: 'black' }}>
-          <Routes>  
-              <Route index  element={<Home />} />
-              <Route path="/favorites" element={<Favorites />} />
-              
-          </Routes>
-      </main>
-    </MovieProvider>
+    
+      <MovieProvider>
+          <NavBar/>
+        <main className="main-content" style={{ backgroundColor: 'black' }}>
+            <Routes>  
+                <Route path="/"  element={<Home />} />
+                <Route path="/favorites" element={<Favorites />} />
+                
+            </Routes>
+        </main>
+      </MovieProvider>
+    
   );
 }
 
