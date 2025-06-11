@@ -14,8 +14,8 @@ function App() {
           <NavBar/>
         <main className="main-content" style={{ backgroundColor: 'black' }}>
             <Routes>  
-                <Route path="/"  element={<Home />} />
-                <Route path="/favorites" element={<Favorites />} />
+                <Route path="/movie-web"  element={<Home />} />
+                <Route path="/movie-web/favorites" element={<Favorites />} />
                 
             </Routes>
         </main>
